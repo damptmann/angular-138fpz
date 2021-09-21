@@ -2,5 +2,5 @@
 <!-- Display a button only if the price of the product(input) is greater than 700€ -->
 <!-- bind the click event to the notify.emit method -->
 <p *ngIf="product && product.price > 700">
-<button>Notify Me</button>
+<button (click)="notify.emit()">Notify Me</button>
 </p>
